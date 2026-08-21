@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>	
+            <title>Tanggal Penting | SENTRIN 2026</title>
+        <meta property="og:title" content="Tanggal Penting">
+        <meta itemprop="name" content="Tanggal Penting">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Official Site - Seminar Nasional Teknologi dan Rekayasa Informasi (SENTRIN)">
+    <meta name="keywords" content="sentrin ub, ptiik, filkom, event, kegiatan, seminar, konferensi, 2026, ub, sentrin">
+    <meta name="author" content="PSIK">
+    <meta name="robots" content="index, follow" />
+    
+    <link href="https://sentrin.ub.ac.id/assets/skin/jtif/css/landing.min.css" rel="stylesheet">
+    <link href="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/css/sentrin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/plugins/owl-carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/plugins/owl-carousel/assets/owl.theme.default.css">
+    <link href="https://sentrin.ub.ac.id/assets/ptiik/css/jquery.fancybox.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://sentrin.ub.ac.id/assets/images/favicon.ico"/>
+    
+    <link href="https://sentrin.ub.ac.id/assets/select/select2.css" rel="stylesheet">    
+    <script type="text/javascript">
+        var base_url = 'https://sentrin.ub.ac.id/';
+        var base_apps = 'https://sentrin.ub.ac.id/';
+    </script> 	
+
+    <style type="text/css">
+	    /* ==========================================================================
+	       1. IDENTITAS WARNA & CORE
+	       ========================================================================== */
+	    :root {
+	        --navy-sentrin: #2C527A;
+	        --purple-sentrin: #845EC2;
+	        --magenta-sentrin: #D65DB1;
+	        --gray-sentrin: #4B4453;
+	        --cream-sentrin: #f9f1d7;
+	        --light-gray-sentrin: #f4f4f4;
+	    }
+	
+	    body { 
+	        font-family: 'Poppins', sans-serif;
+	        font-size: 16px; /* Ukuran dasar standar */
+	        line-height: 1.6; 
+	        min-height: 105%;
+	    }
+	
+	    /* Helper Background & Text Classes */
+	    .bg-navy-sentrin { background-color: var(--navy-sentrin) !important; }
+	    .bg-purple-sentrin { background-color: var(--purple-sentrin) !important; }
+	    .bg-magenta-sentrin { background-color: var(--magenta-sentrin) !important; }
+	    .bg-gray-sentrin { background-color: var(--gray-sentrin) !important; }
+	    .bg-cream-sentrin { background-color: var(--cream-sentrin) !important; }
+	    .bg-light-gray-sentrin { background-color: var(--light-gray-sentrin) !important; }
+	    
+	    .font-navy { color: var(--navy-sentrin) !important; }
+	    .font-magenta { color: var(--magenta-sentrin) !important; }
+	    .font-gray { color: var(--gray-sentrin); }
+	    .text-white { color: #fff !important; }
+	    .feature-time { color: var(--magenta-sentrin) !important; font-weight: bold; }
+	
+	    /* ==========================================================================
+	       2. NAVIGATION & HEADER
+	       ========================================================================== */
+	    .bg-navy-blue { background-color: var(--navy-sentrin) !important; }
+	    .bg-soft-purple { background-color: var(--purple-sentrin) !important; }
+	    .navbar-default .navbar-nav-sticky>li>a { color: #fff !important; }
+	
+	    /* ==========================================================================
+	       3. SLIDER CAPTION
+	       ========================================================================== */
+	    .slider-item { position: relative; overflow: hidden; }
+	    .slider-caption, .flex-caption {
+	        position: absolute;
+	        top: 50%;
+	        left: 5vw;
+	        transform: translateY(-50%);
+	        z-index: 20;
+	        max-width: 600px !important;
+	        padding: 30px !important;
+	        background-color: rgba(255, 255, 255, 0.85);
+	        border-left: 8px solid var(--navy-sentrin);
+	        color: var(--gray-sentrin) !important;
+	        text-shadow: 1px 1px 1px rgb(0 0 0 / 10%);
+	        transition: all .3s ease;
+	    }
+	    .slider-caption h2 {
+	        font-size: 3rem;
+	        letter-spacing: 2px;
+	        text-transform: uppercase;
+	        font-weight: 700;
+	        line-height: 1;
+	        margin-bottom: 15px;
+	        color: var(--navy-sentrin);
+	    }
+	
+	    /* ==========================================================================
+	       4. INDEX ELEMENTS (BOXES, CARDS, SPEAKERS)
+	       ========================================================================== */
+	    /* Box Content */
+	    a.box-content { 
+	        height: 150px !important; 
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        transition: all 0.3s ease;
+	    }
+	    
+	    .hover-up:hover { 
+	        transform: translateY(-8px); 
+	        box-shadow: 0 10px 20px rgba(0,0,0,0.15); 
+	        text-decoration: none; 
+	    }
+	
+	    /* Typography */
+	    .body-text-p { font-size: 1.5rem; line-height: 1.8; color: #444; }
+	    .icon-header { font-size: 40px; margin-bottom: 10px; }
+	
+	    /* Speaker Cards */
+	    .speaker-card {
+	        background: white;
+	        padding: 25px;
+	        border-radius: 15px;
+	        margin: 10px;
+	        transition: all 0.3s ease;
+	    }
+	    .speaker-card:hover {
+	    	cursor: pointer;
+	    }
+	    .img-keynote {
+	        border: 5px solid #eee;
+	        transition: border-color 0.3s;
+	    }
+	    .speaker-card:hover .img-keynote { border-color: var(--magenta-sentrin); }
+	
+	    /* Jurnal Logos */
+	    .logo-index-white {
+	        background: white;
+	        padding: 10px;
+	        border-radius: 5px;
+	        margin-bottom: 15px;
+	        height: 60px;
+	        object-fit: contain;
+	        width: 100%;
+	    }
+	
+	    /* Gallery */
+	    .hover-zoom { transition: transform 0.3s ease; }
+	    .hover-zoom:hover { transform: scale(1.05); }
+	
+	    /* ==========================================================================
+	       5. COUNTDOWN SECTION (CENTERED FLEX)
+	       ========================================================================== */
+	    .countdown-time-wrapper {
+	        display: flex;
+	        justify-content: center;
+	        align-items: center;
+	        flex-wrap: wrap;
+	        gap: 20px;
+	        margin-top: 30px;
+	    }
+	    
+	    .countdown-time-wrapper .count-down-box {
+	        background: #ffffff;
+	        color: var(--navy-sentrin);
+	        width: 100px;
+	        height: 100px;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        border-radius: 12px;
+	        box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+	        transition: transform 0.3s ease;
+	        text-align: center;
+	        font-weight: bold;
+	    }
+	    
+	    .countdown-time-wrapper .count-down-box:hover { transform: translateY(-5px); }
+	    
+	    .countdown-time-wrapper .time-large {
+	        font-size: 32px;
+	        font-weight: 800;
+	        line-height: 1;
+	    }
+	    
+	    .countdown-time-wrapper .time-text {
+	        font-size: 11px;
+	        font-weight: 600;
+	        margin-top: 5px;
+	        color: var(--gray-sentrin);
+	        letter-spacing: 1px;
+	    }
+	
+	    /* ==========================================================================
+	       6. RESPONSIVITAS & MEDIA QUERIES
+	       ========================================================================== */
+	    
+	    /* Desktop / Tablet (Large) */
+	    @media (min-width: 768px) {
+	        a.box-content { height: 180px !important; }
+	        header#header > .navbar-main.affix .brand-logo { visibility: visible; opacity: 1; }
+	    }
+	
+	    /* Mobile / Tablet Portrait */
+	    @media (max-width: 768px) {
+	        a.box-content { height: 250px !important; font-size: 12px; }
+	        a.box-content h3 { font-size: 20px; }
+	        .top-header-brand { display: none; }
+	
+	        .slider-caption, .flex-caption {
+	            top: 5vh !important;
+	            transform: none;
+	            max-width: 85vw !important;
+	            color: var(--navy-sentrin) !important;
+	            font-size: 0.75rem;
+	            padding: 15px !important;
+	        }
+	        .slider-caption h2 { font-size: 1.5rem; margin-bottom: 5px; }
+	        
+	        /* Satellite Mobile Fix */
+	        #satellite .card { flex: 1 1 100% !important; }
+	    }
+	
+	    /* Small Phone (Countdown Fix & Box Adjustment) */
+	    @media (max-width: 480px) {
+	        a.box-content { height: 200px !important; font-size: small; }
+	        a.box-content h3 { font-size: large; }
+	        
+	        .countdown-time-wrapper { gap: 10px; }
+	        .countdown-time-wrapper .count-down-box {
+	            width: 75px;
+	            height: 75px;
+	        }
+	        .countdown-time-wrapper .time-large { font-size: 24px; }
+	        .countdown-time-wrapper .time-text { font-size: 9px; }
+	    }
+	
+	    /* ==========================================================================
+	       7. OTHERS (TIMELINE & UTILITIES)
+	       ========================================================================== */
+	    #tbl_timeline { border-collapse: collapse; width: 100%; }
+	    #tbl_timeline td { vertical-align: top; border-bottom: 1px solid #ccc; padding: 12px 0; }
+	    #tbl_timeline tr:last-child td { border-bottom: none; }
+	    .box-sidebar { background-color: #c9e3ff; padding: 10px; font-size: 12px; }
+	    .pd-y-60 { padding: 60px 0 !important; }
+	
+	    /* ==========================================================================
+	       8. SATELLITE EVENTS SECTION
+	       ========================================================================== */
+	    #satellite .card-deck {
+	        display: flex;
+	        flex-wrap: wrap;
+	        gap: 20px;
+	    }
+	    #satellite .card {
+	        flex: 1 1 300px;
+	        display: flex;
+	        flex-direction: column;
+	        border-radius: 12px;
+	        transition: all 0.3s ease;
+	        border: none !important;
+	        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+	    }
+	    #satellite .card:hover {
+	        transform: translateY(-8px);
+	        box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+	    }
+	    #satellite .card-body {
+	        flex-grow: 1;
+	    }
+	    #satellite .card-body img {
+	        height: 50px;
+	        width: auto;
+	        margin-bottom: 15px;
+	        object-fit: contain;
+	    }
+	    #satellite .card-body h5 {
+	        font-weight: 700;
+	        line-height: 1.3;
+	        color: var(--navy-sentrin);
+	        margin-bottom: 10px;
+	    }
+	    #satellite .card-footer {
+	        border-top: none;
+	        padding-top: 0;
+	    }
+	    #satellite .card-footer h5 {
+	        font-size: 14px;
+	        font-weight: 700;
+	        margin-bottom: 0;
+	    }
+	    /* Specific Colors from Your HTML Classes */
+	    .bg-light-yellow { background-color: #fff9e6 !important; }
+	    .bg-light-pink   { background-color: #fff0f5 !important; }
+	    .bg-light-blue   { background-color: #f0f7ff !important; }
+	    .font-orange     { color: #e67e22 !important; }
+	    .font-green      { color: #27ae60 !important; }
+	    .font-blue       { color: var(--navy-sentrin) !important; }
+	    
+	    /* ==========================================================================
+       9. JOURNAL PUBLICATION SECTION (FIXED SIZE)
+       ========================================================================== */
+	    .journal-card {
+	        background: #ffffff;
+	        border-radius: 15px;
+	        padding: 25px;
+	        display: flex;
+	        align-items: center;
+	        gap: 20px;
+	        box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+	        height: 100%;
+	        border: 1px solid #eee;
+	    }
+	
+	    /* Pembungkus Logo */
+	    .journal-logo-wrapper {
+	        flex: 0 0 140px; /* Lebar area logo */
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	    }
+	
+	    .journal-logo-inner {
+	        display: block;
+	        width: 100%;
+	        height: 80px; /* MENGUNCI TINGGI LOGO AGAR SINKRON */
+	        display: flex;
+	        align-items: center;
+	        justify-content: center;
+	    }
+	
+	    .journal-logo-inner img {
+	        max-width: 100%;
+	        max-height: 100%;
+	        width: auto;
+	        height: auto;
+	        object-fit: contain; /* Memastikan gambar tidak terpotong dan tetap proporsional */
+	        filter: grayscale(100%);
+	        opacity: 0.6;
+	        transition: all 0.3s ease;
+	    }
+	    
+	    .journal-card:hover {
+	    	cursor: pointer;
+	    }
+	
+	    .journal-card:hover .journal-logo-inner img {
+	        filter: grayscale(0%);
+	        opacity: 1;
+	        transform: scale(1.05);
+	    }
+	
+	    .journal-info {
+	        flex-grow: 1;
+	        border-left: 1px solid #f0f0f0;
+	        padding-left: 20px;
+	    }
+	
+	    .journal-info h4 {
+	        margin: 0 0 5px 0;
+	        font-weight: 800;
+	        color: var(--navy-sentrin);
+	    }
+	
+	    .journal-info p {
+	        font-size: 12px;
+	        line-height: 1.4;
+	        margin-bottom: 8px;
+	        color: var(--gray-sentrin);
+	    }
+	    
+	    .badge-sinta {
+	        display: inline-block;
+	        padding: 3px 10px;
+	        border-radius: 4px;
+	        font-size: 10px;
+	        font-weight: 700;
+	        color: #fff;
+	    }
+	    .sinta-2 { background: var(--navy-sentrin); }
+	
+	    @media (max-width: 768px) {
+	        .journal-card {
+	            flex-direction: column;
+	            text-align: center;
+	        }
+	        .journal-info {
+	            border-left: none;
+	            border-top: 1px solid #f0f0f0;
+	            padding-left: 0;
+	            padding-top: 15px;
+	        }
+	    }
+	    
+	    /* Section Pengumuman Homepage SENTRIN 2026 */		
+		.announcement-card {
+			margin-top: 20px;
+		    background-color: #e9f0f5;
+		    border-left: 5px solid #d65db1;
+		    border-top: 1px solid #eef2f5;
+		    border-right: 1px solid #eef2f5;
+		    border-bottom: 1px solid #eef2f5;
+		    border-radius: 8px;
+		    padding: 25px 30px;
+		    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+		}
+		
+		.announcement-header {
+		    display: flex;
+		    align-items: center;
+		    margin-bottom: 15px;
+		    border-bottom: 1px dashed #e2e8f0;
+		    padding-bottom: 12px;
+		}
+		
+		.announcement-icon {
+		    font-size: 1.5rem;
+		    color: #d65db1;
+		    margin-right: 12px;
+		}
+		
+		.announcement-header h2 {
+		    margin: 0;
+		    color: #845ec2;
+		    font-size: 2rem;
+		    font-weight: 700;
+		}
+		
+		.announcement-body p {
+		    color: #4a5568;
+		    line-height: 1.7;
+		    margin-bottom: 12px;
+		    font-size: 15px;
+		    text-align: justify;
+		}
+		
+		.announcement-body p:last-child {
+		    margin-bottom: 0;
+		}
+		
+		.edas-link {
+		    color: #2C527A;
+		    font-weight: 600;
+		    text-decoration: underline;
+		    word-break: break-all;
+		}
+		
+		.edas-link:hover {
+		    color: #D65DB1;
+		}
+		
+		.email-link {
+		    color: #2C527A;
+		    font-weight: 600;
+		    text-decoration: none;
+		}
+		
+		.email-link:hover {
+		    text-decoration: underline;
+		    color: #D65DB1;
+		}
+		
+		.thank-you-note {
+		    font-weight: 600;
+		    color: #2C527A;
+		    margin-top: 15px;
+		}
+		
+		/* Responsivitas Mobile */
+		@media (max-width: 576px) {
+		    .announcement-card {
+		        padding: 20px;
+		    }
+		    
+		    .announcement-header h2 {
+		        font-size: 1.15rem;
+		    }
+		}
+	</style>	
+</head>
+
+<body style="min-height: 105%;">
+    <header id="header">
+        <section class="nav-top">
+            <div class="container">
+                <div class="nav-header">
+                    <a class="nav-toggle collapsed" data-toggle="collapse" data-target="#nav-top-collapse" href="#"><span class="fa fa-cog"></span> Action</a>
+                </div>
+                <div class="collapse nav-top-collapse" id="nav-top-collapse">
+                    <ul class="nav-top-nav nav-left">
+                        <li><a href="https://facebook.com/sentrin" target="_blank"><span class="fa fa-facebook fa-fw"></span></a></li>
+                        <li><a href="https://twitter.com/SentrinFilkom" target="_blank"><span class="fa fa-twitter fa-fw"></span></a></li>
+                        <li><a href="https://instagram.com/sentrin.filkom/" target="_blank"><span class="fa fa-instagram fa-fw"></span></a></li>
+                    </ul>
+                    <ul class="nav-top-nav nav-right text-uppercase">
+                        <li>
+                            <form id="form-search" method="POST" action="index.html/search" class="nav-form-nav">
+                                <input id="searchTxt" name="searchTxt" type="text" class="form-control" placeholder="Search..">
+                                <button type="submit" class="search-button"><span class="fa fa-search"></span></button>
+                            </form>
+                        </li>
+                        <li><a href="http://filkom.ub.ac.id" target="_blank">Filkom UB</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        
+        <nav class="navbar navbar-default navbar-main navbar-static-top bg-soft-purple">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand brand-logo">
+                        <img class="brand-img" src="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/img/logo-sentrin-wh_sm.png">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-navbar-collapse">
+                    <ul class="nav navbar-nav-sticky navbar-center">
+                                                    <li><a href="index.html"><span class="fa fa-home"></span></a></li>
+                            <li ><a href="call-for-papers.html">CALL FOR PAPER</a></li><li class="dropdown">
+						<a rel="alternate" hreflang="x-default" href="#"  data-toggle="dropdown" role="button" aria-expanded="false">PROGRAM <span class="caret"></span> </a><ul class="dropdown-menu" role="menu"><li class="menu-item dropdown dropdown-submenu">
+						<a rel="alternate" hreflang="x-default" href="#"  data-toggle="dropdown" role="button" aria-expanded="false">PEMBICARA </a><ul class="dropdown-menu" role="menu"><li ><a href="index.html/read/dr-anto-satriyo-nugroho-beng-meng/1d600c8">Dr. Anto Satriyo Nugroho, B.Eng., M.Eng.</a></li><li ><a href="index.html/read/assoc-prof-dr-eng-ayu-purwarianti-st-mt/c040070">Assoc. Prof. Dr. Eng. Ayu Purwarianti, S.T., M.T.</a></li></ul></li></ul></li><li ><a href="committee.html">KOMITE</a></li><li ><a href="submission.html">SUBMISSION</a></li><li ><a href="registration.html">REGISTRASI</a></li><li ><a href="contact.html">KONTAK</a></li>                                            </ul>
+                </div>
+            </div>
+        </nav>
+
+            </header>
+
+    <section id="wrapper" style="min-height: 105%;">
+<section class="content-white">
+    <style>
+        #table_conf .jam, #table_session .jam { white-space: nowrap; font-weight: bold; color: var(--magenta-sentrin); }
+        #table_conf th, #table_session th { background-color: var(--navy-sentrin) !important; color: white; text-align: center; font-weight: bold; padding: 12px; }
+        #table_conf, #table_session { border: 1px solid #ddd; width: 100%; margin-bottom: 20px; }
+        #table_conf td, #table_session td { border: 1px solid #ddd; padding: 10px; }
+        .body-content-article { font-size: 1.5rem !important; line-height: 1.8; color: #333; }
+        .title-page-main { border-left: 6px solid var(--magenta-sentrin); padding-left: 15px; font-weight: 700; color: var(--navy-sentrin); }
+    </style>
+
+    <div class="content content-grey padding-top-lg margin-bottom-no" style="background: #fcfcfc; border-bottom: 1px solid #eee;">	
+        <div class="container">	
+            <div class="row">
+                                    <div class="col-md-6">
+                        <h1 class="title-page-main margin-top-lg margin-bottom-sm font-raleway">
+                            Tanggal Penting                        </h1>
+                    </div>
+                            </div>
+        </div>
+    </div>
+
+    <div class="content content-white padding-top-lg">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-12">
+                                            <article class="body-content-article">
+                            <table id="tbl_timeline">
+	<tbody>
+		<tr>
+			<td>Batas akhir pengumpulan <em>full paper</em></td>
+			<td><strong><s>4 Mei, 18 Mei, 30 Juni</s>, 15 Juli 2026</strong></td>
+		</tr>
+		<tr>
+			<td>Pengumuman penerimaan</td>
+			<td><strong>5 Agustus 2026</strong></td>
+		</tr>
+		<tr>
+			<td colspan="2">Batas akhir registrasi</td>
+		</tr>
+		<tr>
+			<td>- Gelombang 1</td>
+			<td><strong>12 Agustus 2026</strong></td>
+		</tr>
+		<tr>
+			<td>- Gelombang 2</td>
+			<td><strong>19 Agustus 2026</strong></td>
+		</tr>
+		<tr>
+			<td>Batas akhir pengiriman artikel <em>camera ready paper</em></td>
+			<td><strong>19 Agustus 2026</strong></td>
+		</tr>
+		<tr>
+			<td>Pelaksanaan SENTRIN 2026</td>
+			<td><strong>9-10 September 2026</strong></td>
+		</tr>
+	</tbody>
+</table>
+                        </article>
+                    
+                    
+                </div> 
+            </div> </div> </div> </section>
+
+	<footer id="footer" role="contentinfo" itemscope="" itemtype="http://schema.org/WPFooter">
+	        <div class="footer-top padding-top-lg padding-bottom-xl bg-white tx-center">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-sm-4 col-md-4">				
+	                        <h3 class="font-ubuntu text-uppercase margin-top-no title-content title-content-sm title-underline font-magenta">Previous Event</h3>
+	                        <div class="row">
+	                            <div class="col-md-12">
+	                                <a href="http://sentrin.ub.ac.id/event/sentrin25" target="_blank">
+	                                    <img src="https://file-filkom.ub.ac.id/fileupload/assets/upload/file/event/kegiatan/2022-03/logo_sentrin-2022.png" class="img-responsive center-block margin-top-md mg-b-20 hover-zoom">
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	
+	                    <div class="col-sm-8 col-md-8">
+	                        <h3 class="font-ubuntu text-uppercase margin-top-no title-content title-content-sm title-underline font-magenta">Host</h3>
+	                        <div class="row center-content-flex" style="margin-top:0px">
+	                            <div class="col-sm-6 col-md-6">
+	                                <a href="http://filkom.ub.ac.id" target="_blank">
+	                                    <img alt="Brawijaya University, FILKOM" class="img-responsive center-block margin-top-md mg-b-20 hover-zoom" src="https://sentrin.ub.ac.id/assets/ptiik/siet/img/logo_FILKOM_sm.png">
+	                                </a>
+	                            </div>
+	                            <div class="col-sm-3 col-md-3">
+	                                <a href="http://ub.ac.id/" target="_blank">
+	                                    <img alt="Brawijaya University, FILKOM" class="img-responsive center-block margin-top-md mg-b-20 hover-zoom" src="https://sentrin.ub.ac.id/assets/ptiik/siet/img/logo-UB_sm.png">
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	
+	        <div class="footer-bottom padding-top-lg padding-bottom-sm bg-navy-sentrin text-white">
+	            <div class="container">
+	                <div class="row">
+	                    <div class="col-sm-4 text-center text-left-md">
+	                        Copyright © <span itemprop="copyrightYear">2026</span> <span itemprop="copyrightHolder">FILKOM Universitas Brawijaya</span>
+	                    </div>
+	                    <div class="col-sm-8">
+	                        <ul class="menu-footer list-unstyled list-inline text-center text-right-md">
+	                            <li>Seminar Nasional Teknologi & Rekayasa Informasi (SENTRIN) 2026</li>
+	                        </ul>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>			
+	    </footer>
+	
+	    <script src="https://sentrin.ub.ac.id/assets/ptiik/js/jquery-1.11.1.min.js"></script>	
+	    <script src="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/js/sentrin.min.js"></script>
+	    <script src="https://sentrin.ub.ac.id/assets/ptiik/sentrin17/plugins/owl-carousel/owl.carousel.min.js"></script>
+	    <script src="https://sentrin.ub.ac.id/assets/ptiik/siet/plugins/jquery.countdown/jquery.countdown.min.js"></script>
+	    <script src="https://sentrin.ub.ac.id/assets/ptiik/js/jquery.fancybox.pack.js"></script>
+	    <script type="text/javascript" src="https://sentrin.ub.ac.id/assets/ptiik/js/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	    <script src="https://sentrin.ub.ac.id/assets/js/jquery/jquery.cookie.js"></script>
+	    <script src="https://sentrin.ub.ac.id/assets/js/search.js"></script>
+	
+	    <script src="https://sentrin.ub.ac.id/assets/js/datatables/jquery.dataTables.js"></script><script src="https://sentrin.ub.ac.id/assets/js/datatables/DT_bootstrap.js"></script><script src="https://sentrin.ub.ac.id/assets/select/select2.js"></script>	
+	    <script>
+	    /* --- AJAX Functions (Event & Upload) --- */
+	    function view_event(a,b,c,d){
+	        var url = base_url+"event/get_data_event/"+a+"/"+b+"/"+c+"/"+d;
+	        $.ajax({
+	            type: "POST",
+	            dataType: "HTML",
+	            url: url,
+	            success:function(msg) {
+	                $("#view-event").show().html(msg);
+	                // Reset views
+	                $("#profile, #dokumen, #tagihan, #abstrak, #paper, #revisi").hide();
+	                if(a=='peserta') $("#profile").show();
+	                else if(a=='tagihan') $("#tagihan").show();
+	                else { $("#dokumen, #"+a).show(); }
+	            }
+	        });
+	    }
+	
+	    function upload_file(jenis){
+	        $("#view-form-file").show();
+	        $("#form-file").focus();
+	        $("#hidval").val(jenis);
+	        var title = jenis.charAt(0).toUpperCase() + jenis.slice(1);
+	        $("#judul").html("Upload " + title + " File");
+	        if(jenis=='tagihan') {
+	            $("#form-file span.text-title").html("* format: .jpeg, .jpg, .png");
+	            $("#judul").html("Upload Tagihan");
+	        } else {
+	            $("#form-file span.text-title").html("* format: .doc, .docx, .pdf");
+	        }
+	    }
+	
+	    /* --- DOM Ready Logic --- */
+	    $(document).ready(function(){
+	        // Affix Navbar
+	        if($('.navbar-main').length){
+	            $('.navbar-main').affix({ offset: { top: $('.navbar-main').position().top } });
+	        }
+	
+	        // Search Handlers
+	        $('.search-button').click(function(e) {
+	            e.preventDefault();
+	            $('.nav-form-nav').toggleClass('focus');
+	            $("input[name=searchTxt]").focus();
+	        });
+	
+	        // Owl Carousels
+	        var carouselOptions = { items:1, loop:true, center:true, dots:true, autoplay:true, animateOut:'fadeOut', animateIn:'fadeIn' };
+	        if($('.slider-main .owl-carousel').length) $(".slider-main .owl-carousel").owlCarousel(carouselOptions);
+	        if($('.slider-keynote .owl-carousel').length) $(".slider-keynote .owl-carousel").owlCarousel(carouselOptions);
+	
+	        // Countdown Logic
+	        if($('.countdown-time-wrapper').length){
+	            var $count_time = $('.countdown-time-wrapper').data('time');
+	            $('.countdown-time-wrapper').countdown($count_time, function(e) {
+	                $('.count-day .time').text(e.strftime('%D'));
+	                $('.count-hour .time').text(e.strftime('%H'));
+	                $('.count-minute .time').text(e.strftime('%M'));
+	                $('.count-second .time').text(e.strftime('%S'));
+	            });
+	        }
+	
+	        // Fancybox Init
+	        if ($(".fancybox").length) {
+	            $(".fancybox").attr('rel', 'gallery').fancybox({
+	                helpers : { media : {}, title: { type: 'inside', position: 'bottom' } },
+	                beforeShow: function () { document.oncontextmenu = function() { return false; }; }
+	            });
+	        }
+	
+	        // Language Switch
+	        $(".lang-switch").click(function(e){
+	            e.preventDefault();
+	            $.cookie("lang-switch", $(this).data("lang"), { expires: 365, path: "/" });
+	            location.reload();
+	        });
+	        
+	        // Href
+    		if($('[data-hrefopen]').length){
+    			$('[data-hrefopen]').click(function(e){
+    				e.preventDefault();
+    				var $link = $(this).data('hrefopen');
+    				location.href=$link;
+    			})
+    		}
+	    });
+	
+	    /* --- Security: Disable Right Click & F12 --- */
+	    document.onkeydown = function (e) { if (e.keyCode == 123) return false; };
+	    document.oncontextmenu = new Function("return false");
+	
+	    </script>
+	</body>
+</html>
